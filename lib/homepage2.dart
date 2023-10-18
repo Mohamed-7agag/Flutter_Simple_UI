@@ -1,5 +1,3 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
-
 import 'package:flutter/material.dart';
 import 'package:flutter_application_ui/homepage.dart';
 
@@ -18,11 +16,11 @@ class _Homepage2State extends State<Homepage2> {
         body: Container(
           width: double.infinity,
           height: double.infinity,
-          color: Color(0xff364559),
-          padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+          color: const Color(0xff364559),
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
           child: Column(
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 5,
               ),
               Row(
@@ -31,39 +29,37 @@ class _Homepage2State extends State<Homepage2> {
                   IconButton(
                     onPressed: () {
                       Navigator.of(context).pushReplacement(MaterialPageRoute(
-                        builder: (context) => Homepage(),
+                        builder: (context) => const Homepage(),
                       ));
                     },
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.arrow_back_ios_new_rounded,
                       size: 30,
                       color: Color(0xffffffff),
                     ),
                   ),
-                  Text(
+                  const Text(
                     "Air Conditioner",
                     style: TextStyle(
-                        fontSize: 26,
+                        fontSize: 22,
                         color: Colors.white,
                         fontWeight: FontWeight.w500),
                   ),
-                  Icon(
+                  const Icon(
                     Icons.settings,
                     size: 30,
                     color: Color(0xffffffff),
                   ),
                 ],
               ),
-              SizedBox(
-                height: 2,
-              ),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
                     "Working space",
                     style: TextStyle(
-                      fontSize: 16,
+                      fontSize: 14,
                       color: Color.fromARGB(135, 255, 255, 255),
                     ),
                   ),
@@ -73,10 +69,10 @@ class _Homepage2State extends State<Homepage2> {
                   )
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 60,
               ),
-              CircleAvatar(
+              const CircleAvatar(
                 radius: 145,
                 backgroundColor: Color(0xff4B5D74),
                 child: Column(
@@ -86,7 +82,7 @@ class _Homepage2State extends State<Homepage2> {
                     Text(
                       "24℃",
                       style: TextStyle(
-                        fontFamily: 'myfont',
+                          fontFamily: 'myfont',
                           fontSize: 55,
                           color: Color.fromARGB(255, 232, 240, 248),
                           fontWeight: FontWeight.w500),
@@ -99,14 +95,14 @@ class _Homepage2State extends State<Homepage2> {
                         Text(
                           "Room",
                           style: TextStyle(
-                            fontSize: 23,
+                            fontSize: 21,
                             color: Color.fromARGB(181, 208, 226, 242),
                           ),
                         ),
                         Text(
                           "Temperature",
                           style: TextStyle(
-                            fontSize: 23,
+                            fontSize: 21,
                             color: Color.fromARGB(181, 208, 226, 242),
                           ),
                         ),
@@ -115,27 +111,27 @@ class _Homepage2State extends State<Homepage2> {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 35,
               ),
-              Text(
+              const Text(
                 "Mode",
                 style: TextStyle(
-                  fontSize: 22,
+                  fontSize: 20,
                   color: Color.fromARGB(181, 208, 226, 242),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
-              Text(
+              const Text(
                 "Power Full",
                 style: TextStyle(
-                    fontSize: 25,
+                    fontSize: 23,
                     color: Color.fromARGB(255, 234, 241, 247),
                     fontWeight: FontWeight.w500),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 25,
               ),
               Row(
@@ -145,10 +141,10 @@ class _Homepage2State extends State<Homepage2> {
                     width: MediaQuery.of(context).size.width / 3.52,
                     height: 120,
                     decoration: BoxDecoration(
-                      color: Color(0xff71849B),
+                      color: const Color(0xff71849B),
                       borderRadius: BorderRadius.circular(12),
                     ),
-                    child: Column(
+                    child: const Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Icon(Icons.severe_cold_rounded,
@@ -159,7 +155,7 @@ class _Homepage2State extends State<Homepage2> {
                         Text(
                           "Cold",
                           style: TextStyle(
-                              fontSize: 21,
+                              fontSize: 18,
                               color: Color.fromARGB(176, 255, 255, 255),
                               fontWeight: FontWeight.w500),
                         )
@@ -170,10 +166,10 @@ class _Homepage2State extends State<Homepage2> {
                     width: MediaQuery.of(context).size.width / 3.52,
                     height: 120,
                     decoration: BoxDecoration(
-                      color: Color(0xff71849B),
+                      color: const Color(0xff71849B),
                       borderRadius: BorderRadius.circular(12),
                     ),
-                    child: Column(
+                    child: const Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Icon(Icons.wind_power_rounded,
@@ -184,7 +180,7 @@ class _Homepage2State extends State<Homepage2> {
                         Text(
                           "Fan",
                           style: TextStyle(
-                              fontSize: 21,
+                              fontSize: 18,
                               color: Color.fromARGB(176, 255, 255, 255),
                               fontWeight: FontWeight.w500),
                         )
@@ -195,10 +191,10 @@ class _Homepage2State extends State<Homepage2> {
                     width: MediaQuery.of(context).size.width / 3.52,
                     height: 120,
                     decoration: BoxDecoration(
-                      color: Color(0xff71849B),
+                      color: const Color(0xff71849B),
                       borderRadius: BorderRadius.circular(12),
                     ),
-                    child: Column(
+                    child: const Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Icon(Icons.water_drop,
@@ -209,7 +205,7 @@ class _Homepage2State extends State<Homepage2> {
                         Text(
                           "Dry",
                           style: TextStyle(
-                              fontSize: 21,
+                              fontSize: 18,
                               color: Color.fromARGB(176, 255, 255, 255),
                               fontWeight: FontWeight.w500),
                         )
@@ -218,15 +214,15 @@ class _Homepage2State extends State<Homepage2> {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 25,
               ),
-              CircleAvatar(
-                  radius: 33,
+              const CircleAvatar(
+                  radius: 35,
                   backgroundColor: Color(0xffd0e2f2),
                   child: Icon(
                     Icons.power_settings_new_rounded,
-                    size: 38,
+                    size: 40,
                     color: Color(0xff364559),
                   ))
             ],
